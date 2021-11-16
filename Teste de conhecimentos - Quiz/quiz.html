@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Quiz Covid-19 </title>		
+        <link rel="shortcut icon" href="vacina.svg">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/quiz-style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	</head>
+	<body>
+        <header>
+			<div class="container">
+				<h1 class="titulo">Teste seus conhecimentos sobre Covid-19</h1>
+                <br>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+                <section class="jogo">
+                    <div class="pontuacao">
+                        Acertou: <span id="acertos">0</span>
+                        Errou: <span id="erros">0</span><br>
+                    </div>
+
+                <br>
+
+                    <p id="pergunta">pergunta</p>
+                    <div id="lista-alternativas">
+                        <p id="alternativa-1" class="botao-alternativa">alternativa-1</p>
+                        <p id="alternativa-2" class="botao-alternativa">alternativa-2</p>
+                        <p id="alternativa-3" class="botao-alternativa">alternativa-3</p>
+                        <p id="alternativa-4" class="botao-alternativa">alternativa-4</p>
+                    </div>
+                <p id="resultado">Aqui vai o feedback se acertou ou errou</p>
+                <br>
+                <button id="proxima" class="botao bto-principal">Proxima</button>
+                </section>
+            </section>
+		</main>
+
+        <footer>Equipe Vila Germânica +Devs2Blu</footer>        
+		<script src="js/quiz.js"></script>
+	</body>
+</html>

@@ -1,0 +1,156 @@
+body{
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+  width: 100%;
+  background-size: cover ;
+  background-image: url(https://image.shutterstock.com/image-illustration/coronavirus-covid19-under-microscope-3d-260nw-1643947495.jpg)
+}
+
+header{
+  background: #439bd6;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.jogo{
+  margin: 5px 5px;
+  padding: 20px;
+  width: 600px;   
+}
+
+.pontuacao{
+  margin: 0px 0px 0px 30px;
+  background-color: rgba(0,0,0,0.2);
+  color: white;
+  width: 100%;
+  padding: 5px 10px 5px 10px;  
+  line-height: 1.7;
+  
+}
+
+#acertos{
+    display: inline-block;
+    text-align: center;        
+    background: #16af16;  
+    color: white;      
+    margin: 5px 5px;
+    padding: 5px;
+    width: 40px;
+    vertical-align: middle;
+    height: 20px;    
+    border-radius: 4%;    
+}
+
+#erros{
+  display: inline-block;
+  text-align: center;        
+  background: #c93d3d;  
+  color: white;      
+  margin: 5px 5px;
+  padding: 5px;
+  width: 40px;
+  vertical-align: middle;
+  height: 20px;    
+  border-radius: 4%;    
+}
+
+#pergunta, #resultado{
+  width: 100%;
+  height: 40px;
+  margin: 10px 0px 15px 30px;
+  padding: 10px 10px 10px 10px;  
+  font-weight: bold;
+  background-color: #e9dfc8;  
+}
+
+
+#lista-alternativas{  
+  width: 100%;
+  margin: 0px 0px 0px 30px;
+  
+}
+
+.botao-alternativa{
+   /*display: inline-block;*/
+    text-align: left;            
+    background-color: rgba(20, 92, 226, 0.8);    
+    color: white;      
+    margin: 0px 0px 2px 0px;
+    padding: 10px 5px 0px 15px;
+    width: 100%;
+    height: 35px;    
+    border-radius: 10%;  
+    line-height: 1.7;
+    cursor: pointer;    
+}
+
+.resposta-correta{
+  text-align: left;            
+  background-color: rgba(2, 67, 21, 0.8);    
+  color: white;      
+  margin: 0px 0px 2px 0px;
+   padding: 10px 5px 0px 15px;
+   width: 100%;
+   height: 35px;    
+   border-radius: 10%;  
+   line-height: 1.7;
+   cursor: pointer;
+}
+
+.resposta-errada{
+  text-align: left;            
+  background-color: rgba(157, 4, 4, 0.8);
+    color: white;      
+    margin: 0px 0px 2px 0px;
+    padding: 10px 5px 0px 15px;
+    width: 100%;
+    height: 35px;    
+    border-radius: 10%;  
+    line-height: 1.7;
+    cursor: pointer;
+}
+
+#lista-alternativas p:hover{
+  background: #1c0264;     
+  transition: 0.5s;
+  
+}
+
+.titulo{
+    font-weight: strong;
+    font-style: bold;
+    font-size: 20px;
+}
+
+#proxima{
+  display: inline-block;  
+    text-align: center;        
+    font-weight: bolder;
+    background: #f8ab02;  
+    color: rgb(0, 0, 0);      
+    margin: 10px 0px 0px 30px;
+    padding: 10px;
+    width: 150px;    
+    height: 35px;    
+    border-radius: 4%;    
+
+}
+
+footer{
+  margin-top: 50px;
+  text-align: center;
+  background: #439bd6;
+  padding: 10px 0;
+  margin-bottom: 10px;  
+  color: white;
+  font-weight: lighter;
+}
+
+.intro{
+  margin: 5px 5px;
+  padding: 20px;
+  width: 600px;      
+}

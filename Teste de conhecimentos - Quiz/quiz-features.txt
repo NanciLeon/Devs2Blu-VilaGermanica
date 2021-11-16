@@ -1,0 +1,34 @@
+Quiz de múltipla escolha com foco na conscientização
+
+Motivações: 
+
+	Mais facilidade para atingir todos os públicos;
+	Rápido de fazer;
+	Tem resultado prático, gerando resultados para agir;
+	Conscientiza enquanto joga.
+
+Features:
+
+	Montar a tela com uma pergunta e 4 alternativas, sendo uma correta;
+	Efeito visual ao passar o cursor sobre as alternativas;
+	Mostrar o resultado no evento de clicar sobre uma das alternativas;
+	Validar se a resposta é correta ou não;
+	Contabilizar a pontuação no topo da página;
+	Colorir a alternativa clicada em verde caso correto e vermelha caso incorreta;
+	Se errar, colorir a alternativa correta em verde;
+	Validar se alguma alternativa foi escolhida ao clicar no botão "Próxima";
+	Ao final, mostrar uma mensagem diferente dependendo da quantidade de acerto.	
+
+Tecnologias empregadas: 
+
+	HTML + CSS + JavaScript
+	
+Features adicionais (melhorias à fazer):
+
+	Persistir os dados sobre erros e acertos, de forma anônima, para saber quais são as maiores deficiências de informação da população. (Ex.: Pessoal errou muito falando que tratamentos incorretos são válidos.)
+	Capturar a localização, para mapear essas deficiências de informação, e apontar num mapa de temperatura (Ex.: Qual bairro precisa de mais conscientização local, mais cartazes, etc.).
+
+Observações gerais:
+
+	O site deveria ser divulgado em forma de vinculação em algum site do governo (município).
+	Importante lembrar que o jogo é sério, devido ao foco na conscientização, porém não é chato, pois quase todos gostam de jogos de perguntas e respostas.
