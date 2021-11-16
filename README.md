@@ -33,8 +33,8 @@ Nome | Trabalho
 ------------- | -------------
 Alessandro B. Ferreira | Chatbots
 Bezalel M. Ribeiro | Site, login e cadastro 
-Elton A. Ribeiro | Geolocalização e Mineração de Dados
-Guilherme Fachini | Geolocalização e Mineração de Dados
+Elton A. Ribeiro | Geolocalização e Mineração de Dados do SUS
+Guilherme Fachini | Geolocalização e Mineração de Dados do SUS
 Juliano H. S. Vieira | Teste de conhecimentos (Quiz)
 Nanci  I.León | Frontpage do Site e Frontpage do Quiz
 Vinicios P. Tribess | Agendamento de vacinação
