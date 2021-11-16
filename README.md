@@ -20,7 +20,7 @@ Site, login e cadastro | HTML5 / CSS / JavaScript / MySQL
 Chatbots | Python / Google DialogFlow
 Agendamento de vacinação | Python / HTML5 / Twilio / Github / Google Sheets / E-mail
 Teste de Conhecimentos | HTML5 / CSS / JavaScript
-Geolocalização e Mineração de Dados | Jupyter Notebook / Python / Google SDKs e APIs Places / OpenDataSUS
+Geolocalização e Mineração de Dados | Jupyter Notebook / Python / Google SDKs e APIs Places / OpenDataSUS / Postman
 Armazenamento WEB | Amazon AWS ou Google Cloud
 Metodologia Ágil - Kanbam| Trello
 Repositório | GIT / Github
