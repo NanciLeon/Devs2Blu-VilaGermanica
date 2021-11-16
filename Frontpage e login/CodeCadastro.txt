@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" /> 
+    <script>
+      function goPython(){
+          $.ajax({
+            url: "config.py",
+           context: document.body
+          }).done(function() {
+           alert('finished python script');;
+          });
+      }
+  </script>
+    
+  </head>
+  <body>
+<div class="container" >
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+    
+    <div class="content">   
+ <!--FORMULÁRIO DE CADASTRO-->
+      <div id="cadastro">
+        <form method="post" action=""> 
+          <h1>Cadastro</h1> 
+          
+          <p> 
+            <label for="nome_cad">Seu nome</label>
+            <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Antônio Garcia" />
+          </p>
+          
+          <p> 
+            <label for="email_cad">Seu e-mail</label>
+            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@gmail.com"/> 
+          </p>
+          
+          <p> 
+            <label for="tele_cad">Telefone</label>
+            <input id="tele_cad" name="tele_cad" required="required" type="text" placeholder="(47) 99887-6543 " />
+          </p>
+
+          <p> 
+            <label for="nsus_cad">Num. Identificação SUS</label>
+            <input id="nsus_cad" name="nsus_cad" required="required" type="text" placeholder="999 0000 1234 5678" />
+          </p>
+
+          <p> 
+            <label for="senha_cad">Sua senha</label>
+            <input id="senha_cad" name="senha_cad" required="required" type="password"/>
+          </p>
+          
+          <p> 
+            <button value="Cadastrar" onclick="goPython()">test</button> 
+          </p>
+          
+          <p class="link">  
+            Já tem conta?
+            <a href="login.html"> Ir para Login </a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
