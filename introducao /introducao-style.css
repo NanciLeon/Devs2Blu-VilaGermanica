@@ -1,0 +1,18 @@
+body {
+    background-size: cover ;
+    background-image: url(https://image.shutterstock.com/image-illustration/coronavirus-covid19-under-microscope-3d-260nw-1643947495.jpg)
+}
+
+h1 {
+    font-style: oblique;
+    color: cornsilk;
+}
+p {
+    color: cornsilk;
+}
+
+
+div {
+    margin: 30px 50px;
+}
+
