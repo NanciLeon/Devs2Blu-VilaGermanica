@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Calibri;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type=button] {
+            background-color: #304064;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type=button]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+
+            .col-25,
+            .col-75,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="row" style="background-color:#304064;">
+            <div class="col-100"> <img style="border: 15px solid #304064;"
+                    src="https://pronto.blumenau.sc.gov.br/pronto/Resources/img_LogoPMB.png"> </div>
+        </div>
+    </div>
+    <h2>Agendamento Covid-19</h2>
+    <div class="container">
+        <form method="post" autocomplete="off" name="google-sheet">
+            <div class="col-25"> <label for="cep">Nome</label> </div>
+                <div class="col-75"> <input type="text" name="Nome" class="form-control" placeholder="" value="" required=""/> </div>
+            <div class="row">
+                <div class="col-25"> <label for="cep">Data de Nascimento</label> </div>
+                <div class="col-75"> <input type="text" name="DataNascimento" class="form-control" placeholder="" value="" required=""/> </div>
+            <div class="row">
+                <div class="col-25"> <label for="cpf">CPF</label> </div>
+                <div class="col-75"> <input type="text" name="CPF" class="form-control" placeholder="" value="" required=""/> </div>
+            </div>
+            <div class="row">
+                <div class="col-25"> <label for="telefone">Telefone <b>celular</b></label> </div>
+                <div class="col-75"> <input type="text" name="Telefone" class="form-control" placeholder="" value="" required=""/> </div>
+            </div>
+            <div class="row">
+                <div class="col-25"> <label for="cep">CEP</label> </div>
+                <div class="col-75"> <input type="text" name="CEP" class="form-control" placeholder="" value="" required=""/> </div>
+            </div>
+            <div class="row">
+                <div class="col-25"> <label for="numero">Local de Vacinação</label> </div>
+                <div class="col-75"> <input type="text" name="LocalVacina" class="form-control" placeholder="" value="" required=""/> </div>
+            </div>
+            <div class="row">
+                <div class="col-25"> <label for="cep">Data</label> </div>
+                <div class="col-75"> <input type="text" name="Data" class="form-control" placeholder="" value="" required=""/> </div>
+            </div>
+            <div class="row">
+                <div class="col-25"> <label for="cep">Hora</label> </div>
+                <div class="col-75"> <input type="text" name="Hora" class="form-control" placeholder="" value="" required=""/> </div>
+            </div>
+            <div class="row" style="display:none;">
+                <div class="col-25"> <label for="cep">Mensagem1</label> </div>
+                <div class="col-75"> <input type="text" name="Mensagem1" class="form-control" placeholder="" value="FALSO" required=""/> </div>
+            </div>
+            <div class="row" style="display:none;">
+                <div class="col-25"> <label for="cep">Mensagem2</label> </div>
+                <div class="col-75"> <input type="text" name="Mensagem2" class="form-control" placeholder="" value="FALSO" required=""/> </div>
+            </div>
+            <div class="row">
+                <div class="col-25"> </div>
+                <div class="col-75">
+                    <div style="color: red;" id="orientacoes"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25"> <label for="checkbox1">Estou ciente de que, diante da NÃO apresentação de
+                        comprovante exigido, que confirme minha condição, a vacina não será disponibilizada no meu
+                        agendamento.</label> </div>
+                <div class="col-75"> <input type="checkbox" id="checkbox1" name="checkbox1"> </div>
+            </div>
+            <div class="row">
+                <div class="col-25"> <label for="checkbox2">NÃO apresentei FEBRE acima de 37,5ºC ou sintoma de infecção
+                        nas últimas 24h.</label> </div>
+                <div class="col-75"> <input type="checkbox" id="checkbox2" name="checkbox2"> </div>
+            </div>
+            <div class="row">
+                <div class="col-25"> <label for="checkbox3">NÃO testei positivo para COVID-19 nos últimos 30
+                        dias.</label> </div>
+                <div class="col-75"> <input type="checkbox" id="checkbox3" name="checkbox3"> </div>
+            </div>
+            <div class="row">
+                <div class="col-25"> <img src="https://pronto.blumenau.sc.gov.br/pronto/Resources/alert64.png"> </div>
+                <div class="col-75"> <label for="checkbox4">Possuir atestado médico autorizando a vacinação, SE SEU CASO
+                        SE ENQUADRA COMO: Transplante OU doença reumática imunomediada OU imunodeprimidos por doença
+                        oncológica.</label> </div>
+            </div>
+    </div>
+    <div class="row">
+        <div class="col-100"> <label for="grupo"></label> </div>
+    </div>
+    <div class="row"> <input type="submit" name="submit" class="btnSubmit btn-block" value="Agendar" /> </div>
+    </form>
+    </div><br>
+    <div>
+        <div class="row" style="background-color:#304064">
+            <div class="col-100"> <img style="border: 15px solid #304064;"
+                    src="https://pronto.blumenau.sc.gov.br/pronto/Resources/img_vacinaBlumenau.png"> </div>
+        </div>
+    </div>
+</body>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyCMbtEdc3q6sooCck5bKJTXuxtrcDzQXrmYioKjwcgeSBTlSo/exec'
+    const form = document.forms['google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Seu agendamento foi feito com sucesso! Por favor, verifique seu telefone."))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</html>
