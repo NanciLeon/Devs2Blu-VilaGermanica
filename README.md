@@ -1,5 +1,6 @@
 # Devs2Blu-VilaGermanica
 
+
 # Site como serviço público
 
 ## Proposta
@@ -13,12 +14,16 @@ Nosso projeto tem o objetivo de conscientizar e facilitar o acesso dos  moradore
  
 ## Tecnologias Empregadas
 
-Site, login e cadastro - HTML5 / CSS / JavaScript / MySQL
-Chatbots - Python / Google DialogFlow
-Agendamento de vacinação - Python / HTML5 / Twilio / Github / Google Sheets / E-mail
-Teste de Conhecimentos - HTML5 / CSS / JavaScript
-Geolocalização e Mineração de Dados - Jupyter Notebook / Python / Google SDKs e APIs Places / OpenDataSUS
-Armazenamento WEB - Amazon AWS ou Google Cloud
+Tópico | Tecnologias
+------------- | -------------
+Site, login e cadastro | HTML5 / CSS / JavaScript / MySQL
+Chatbots | Python / Google DialogFlow
+Agendamento de vacinação | Python / HTML5 / Twilio / Github / Google Sheets / E-mail
+Teste de Conhecimentos | HTML5 / CSS / JavaScript
+Geolocalização e Mineração de Dados | Jupyter Notebook / Python / Google SDKs e APIs Places / OpenDataSUS
+Armazenamento WEB | Amazon AWS ou Google Cloud
+Metodologia Ágil - Kanbam| Trello
+
 
 ## Equipe
 
@@ -32,4 +37,3 @@ Guilherme Fachini | Geolocalização e Mineração de Dados
 Juliano H. S. Vieira | Teste de conhecimentos (Quiz)
 Nanci  I.León | Frontpage do Site e Frontpage do Quiz
 Vinicios P. Tribess | Agendamento de vacinação
-
