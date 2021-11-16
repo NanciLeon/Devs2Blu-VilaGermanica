@@ -23,6 +23,7 @@ Teste de Conhecimentos | HTML5 / CSS / JavaScript
 Geolocalização e Mineração de Dados | Jupyter Notebook / Python / Google SDKs e APIs Places / OpenDataSUS
 Armazenamento WEB | Amazon AWS ou Google Cloud
 Metodologia Ágil - Kanbam| Trello
+Repositório | GIT / Github
 
 
 ## Equipe
