@@ -1,17 +1,35 @@
 # Devs2Blu-VilaGermanica
 
-## Instruções para usar o repositório:
+# Site como serviço público
 
-Para clonar o repositório na sua máquina use o comando
+## Proposta
 
-``` 
-git clone git@github.com:NanciLeon/Devs2Blu-VilaGermanica.git
-```
+Nosso projeto tem o objetivo de conscientizar e facilitar o acesso dos  moradores de Blumenau através dos seguintes recursos:
 
-Para enviar as alterações feitas para o repositório use o comando
+ - Chatbots: Orientar, tirar dúvidas e prestar assistência quanto aos sintomas do usuário.
+ - Agendamento de vacinas: Facilitar o acesso das pessoas através de lembretes via SMS e reagendamentos diminuindo o número de faltantes em datas agendadas.
+ - Teste de conhecimentos: informar e educar
+ - Geolocalização: Localização de ambulatórios, postos de vacinação, Unidades Básicas de Saúde e volume de ocupação do estabelecimento em função do horário.
+ 
+## Tecnologias Empregadas
 
-``` 
-git add .
-git commit -m "mensagem do commit"
-git push
-```
+Site, login e cadastro - HTML5 / CSS / JavaScript / MySQL
+Chatbots - Python / Google DialogFlow
+Agendamento de vacinação - Python / HTML5 / Twilio / Github / Google Sheets / E-mail
+Teste de Conhecimentos - HTML5 / CSS / JavaScript
+Geolocalização e Mineração de Dados - Jupyter Notebook / Python / Google SDKs e APIs Places / OpenDataSUS
+Armazenamento WEB - Amazon AWS ou Google Cloud
+
+## Equipe
+
+
+Nome | Trabalho
+------------- | -------------
+Alessandro B. Ferreira | Chatbots
+Bezalel M. Ribeiro | Site, login e cadastro 
+Elton A. Ribeiro | Geolocalização e Mineração de Dados
+Guilherme Fachini | Geolocalização e Mineração de Dados
+Juliano H. S. Vieira | Teste de conhecimentos (Quiz)
+Nanci  I.León | Frontpage do Site e Frontpage do Quiz
+Vinicios P. Tribess | Agendamento de vacinação
+
